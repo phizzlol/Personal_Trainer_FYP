@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/homeFragment"
+        android:title="@string/home"/>
+
+    <item android:id="@+id/profileFragment"
+        android:title="@string/profile"/>
+
+    <item android:id="@+id/exerciseFragment"
+        android:title="@string/exercise"/>
+
+    <item android:id="@+id/workoutFragment"
+        android:title="@string/workouts"/>
+
+
+</menu>

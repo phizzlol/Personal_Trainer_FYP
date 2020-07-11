@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/ic_personal_trainer_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/homeText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/blank"
+            android:elevation="20dp"
+            tools:targetApi="lollipop"
+            app:layout_constraintTop_toBottomOf="@+id/appLogo"/>
+
+        <Button
+            android:id="@+id/formHelperButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d67601"
+            android:elevation="40dp"
+            android:text="@string/form_helper"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/predictCaloriesButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeText"
+            app:layout_constraintVertical_bias="0.0"
+            tools:targetApi="lollipop" />
+        <TextView
+            android:id="@+id/blankText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/blank"
+            android:elevation="20dp"
+            tools:targetApi="lollipop"
+            app:layout_constraintTop_toBottomOf="@+id/formHelperButton"/>
+
+        <Button
+            android:id="@+id/predictCaloriesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d67601"
+            android:elevation="80dp"
+            android:text="@string/predict_calories"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/blankText"
+            app:layout_constraintVertical_bias="1.0"
+            tools:targetApi="lollipop" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/calendar_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/calendar"
+        android:src="@android:drawable/ic_menu_my_calendar" />
+
+
+</FrameLayout>
